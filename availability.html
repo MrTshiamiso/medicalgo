@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedicalGo | Availability</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">MedicalGo</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="pharmacies.html">Pharmacies</a></li>
+            <li class="nav-item"><a class="nav-link active" href="availability.html">Availability</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-5 bg-light border-bottom">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge bg-success-subtle text-success mb-3">Availability Checker</span>
+            <h1 class="fw-bold mb-3">Check medicines by pharmacy branch</h1>
+            <p class="mb-0">
+              Select a pharmacy branch below and view the medicines currently available there.
+              This helps users know where to go before leaving home.
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="p-4 bg-white border rounded-4 shadow-sm">
+              <h5 class="mb-3">How it works</h5>
+              <ul class="mb-0 ps-3">
+                <li>Select a pharmacy branch</li>
+                <li>Review available medicines</li>
+                <li>Check stock status</li>
+                <li>Visit the right location</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="mb-4">
+          <h2 class="fw-bold">Choose a Pharmacy</h2>
+          <p class="text-muted">
+            Each branch has a different list of medicines and stock status.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
+              <h4 class="h5">Gaborone Central Pharmacy</h4>
+              <p class="mb-2"><strong>Location:</strong> Main Mall, Gaborone</p>
+              <p class="mb-3"><strong>Status:</strong> Open</p>
+              <a href="#gaborone-central" class="btn btn-success w-100">View Medicines</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
+              <h4 class="h5">HealthPlus Pharmacy</h4>
+              <p class="mb-2"><strong>Location:</strong> Broadhurst, Gaborone</p>
+              <p class="mb-3"><strong>Status:</strong> Open</p>
+              <a href="#healthplus" class="btn btn-success w-100">View Medicines</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
+              <h4 class="h5">PulseMed Pharmacy</h4>
+              <p class="mb-2"><strong>Location:</strong> Tlokweng Road</p>
+              <p class="mb-3"><strong>Status:</strong> Busy</p>
+              <a href="#pulsemed" class="btn btn-success w-100">View Medicines</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white" id="gaborone-central">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+          <div>
+            <h2 class="fw-bold mb-1">Gaborone Central Pharmacy</h2>
+            <p class="text-muted mb-0">Available medicines at this branch</p>
+          </div>
+          <span class="badge bg-success">Open Now</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100">
+              <h5>Paracetamol</h5>
+              <p>Common pain relief and fever medication.</p>
+              <span class="badge bg-success">In Stock</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100">
+              <h5>Vitamin C</h5>
+              <p>Wellness supplement available for immune support.</p>
+              <span class="badge bg-success">In Stock</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100">
+              <h5>Ibuprofen</h5>
+              <p>Used for pain and inflammation relief.</p>
+              <span class="badge bg-warning text-dark">Low Stock</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="healthplus">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+          <div>
+            <h2 class="fw-bold mb-1">HealthPlus Pharmacy</h2>
+            <p class="text-muted mb-0">Available medicines at this branch</p>
+          </div>
+          <span class="badge bg-success">Open Now</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100 bg-white">
+              <h5>Amoxicillin</h5>
+              <p>Prescription antibiotic available in limited quantity.</p>
+              <span class="badge bg-warning text-dark">Low Stock</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100 bg-white">
+              <h5>Allergy Tablets</h5>
+              <p>Used for common allergy symptoms and seasonal reactions.</p>
+              <span class="badge bg-success">In Stock</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100 bg-white">
+              <h5>Cough Syrup</h5>
+              <p>Currently not available at this branch.</p>
+              <span class="badge bg-danger">Unavailable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white" id="pulsemed">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+          <div>
+            <h2 class="fw-bold mb-1">PulseMed Pharmacy</h2>
+            <p class="text-muted mb-0">Available medicines at this branch</p>
+          </div>
+          <span class="badge bg-warning text-dark">Busy</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100">
+              <h5>Paracetamol</h5>
+              <p>General pain relief medicine currently available.</p>
+              <span class="badge bg-success">In Stock</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100">
+              <h5>Ibuprofen</h5>
+              <p>Limited supply due to higher demand today.</p>
+              <span class="badge bg-warning text-dark">Low Stock</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 border rounded-4 h-100">
+              <h5>Vitamin C</h5>
+              <p>Temporarily unavailable at this location.</p>
+              <span class="badge bg-danger">Unavailable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2026 MedicalGo. Designed for better pharmacy access and digital convenience.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
